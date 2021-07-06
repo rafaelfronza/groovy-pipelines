@@ -7,9 +7,11 @@ pipeline {
         stage ("First Stage - Cloning Directory") {
             steps {
                 script {
-                    git url: 'https://github.com/rafaelfronza/scripts.git',
+                    dir ("scripts") {
+                        git url: 'https://github.com/rafaelfronza/scripts.git',
                         credentialsId: 'rafaelfronza',
                         branch: 'master'
+                    }
                     
                     sh "ls -lrt"
                     // dir ("scripts") {
