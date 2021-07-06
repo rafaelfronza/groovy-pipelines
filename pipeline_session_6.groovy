@@ -23,7 +23,7 @@ pipeline {
             steps {
                 script {
                     dir ("scripts") {
-                        bat "ls -lrt"
+                        bat "dir"
                     }
                 }
             }
