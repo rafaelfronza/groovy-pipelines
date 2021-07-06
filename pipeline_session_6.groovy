@@ -12,8 +12,6 @@ pipeline {
                         credentialsId: 'rafaelfronza',
                         branch: 'master'
                     }
-                    
-                    sh "ls -lrt"
                     // dir ("scripts") {
                     //     sh "ls -lrt"
                     // }
