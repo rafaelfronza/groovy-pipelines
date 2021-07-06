@@ -7,9 +7,9 @@ pipeline {
         stage ("First Stage - Cloning Directory") {
             steps {
                 script {
-                    git url: 'https://github.com/rafaelfronza/groovy-pipelines.git'
+                    git url: 'https://github.com/rafaelfronza/scripts.git'
                         credentialsId: 'rafaelfronza'
-                        branch: 'feature/session-6-pipelines'
+                        branch: 'master'
                     
                     sh "ls -lrt"
                 }
