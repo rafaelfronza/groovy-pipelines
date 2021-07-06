@@ -33,7 +33,7 @@ pipeline {
             steps {
                 script {
                     dir ("scripts") {
-                        bat "./script_to_execute.sh"
+                        bat "bash script_to_execute.sh"
                     }
                 }
             }
